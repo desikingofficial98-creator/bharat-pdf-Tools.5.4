@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bharat PDF – Free & Premium PDF Tools</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/icons.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Bharat PDF</h1>
+  <p>Fast • Secure • Premium PDF Tools<br>तेज़, सुरक्षित और भरोसेमंद PDF समाधान</p>
+</header>
+
+<section class="tools-grid">
+  <div class="tool-card" onclick="openTool('img2pdf')">
+    <div class="icon img2pdf"></div>
+    <h3>Image to PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('word2pdf')">
+    <div class="icon word2pdf"></div>
+    <h3>Word to PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('pdf2img')">
+    <div class="icon pdf2img"></div>
+    <h3>PDF to Image</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('merge')">
+    <div class="icon merge"></div>
+    <h3>Merge PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('split')">
+    <div class="icon split"></div>
+    <h3>Split PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('compress')">
+    <div class="icon compress"></div>
+    <h3>Compress PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('rotate')">
+    <div class="icon rotate"></div>
+    <h3>Rotate PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('protect')">
+    <div class="icon protect"></div>
+    <h3>Protect PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('unlock')">
+    <div class="icon unlock"></div>
+    <h3>Unlock PDF</h3>
+  </div>
+
+  <div class="tool-card" onclick="openTool('pdf2word')">
+    <div class="icon pdf2word"></div>
+    <h3>PDF to Word</h3>
+  </div>
+</section>
+
+<!-- PROCESS PANEL -->
+<section id="processor" class="processor hidden">
+  <h2 id="toolTitle"></h2>
+
+  <input type="file" id="files" multiple>
+
+  <div class="progress-box hidden" id="progressBox">
+    <div class="progress-bar" id="progressBar"></div>
+    <span id="progressText">0%</span>
+  </div>
+
+  <button id="processBtn" onclick="runTool()">PROCESS</button>
+
+  <button id="downloadBtn" class="hidden">Download</button>
+
+  <p id="status"></p>
+
+  <button class="back" onclick="goBack()">← Back</button>
+</section>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a><br>
+  © 2026 Bharat PDF
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

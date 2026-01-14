@@ -1,0 +1,56 @@
+/* ===== COMMON ICON BASE ===== */
+.icon{
+  width:48px;
+  height:48px;
+  margin:0 auto;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  color:#fff;
+  background:linear-gradient(135deg,#6366f1,#22d3ee);
+  box-shadow:0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* ===== INDIVIDUAL TOOL ICONS ===== */
+
+.icon.img2pdf::after{
+  content:"🖼️";
+}
+
+.icon.word2pdf::after{
+  content:"📄";
+}
+
+.icon.pdf2img::after{
+  content:"🧾";
+}
+
+.icon.merge::after{
+  content:"➕";
+}
+
+.icon.split::after{
+  content:"✂️";
+}
+
+.icon.compress::after{
+  content:"🗜️";
+}
+
+.icon.rotate::after{
+  content:"🔄";
+}
+
+.icon.protect::after{
+  content:"🔒";
+}
+
+.icon.unlock::after{
+  content:"🔓";
+}
+
+.icon.pdf2word::after{
+  content:"📝";
+}
